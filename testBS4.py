@@ -16,8 +16,10 @@ and they lived at the bottom of a well.</p>
 """
 soup=BeautifulSoup(html_doc,"html.parser")
 #print soup.prettify()
-print soup.title
-print soup.title.name
-print soup.a.attrs
-print soup.p.string
-print type(soup.p.string)#NavigableString
+# print soup.title
+# print soup.title.name
+# print soup.a.attrs
+# print soup.p.string
+# print type(soup.p.string)#NavigableString
+head_tag=soup.head
+print head_tag.content
